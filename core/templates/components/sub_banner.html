@@ -1,0 +1,22 @@
+<div class="flex bg-primary mt-2" style="font-family: 'Poppins';">
+    <div class="container py-6 ">
+        <div class="grid md:grid-cols-2">
+            <div class="">
+                <h1 class="text-center text-white text-lg font-bold lg:text-2xl" >
+                    Join 3,100+ other and never miss <br> out on new offers, and listings. 
+                </h1>   
+            </div>
+            <div class="flex justify-center mt-6">
+                <div class="bg-white rounded-lg">
+                    <div class="flex flex-wrap justify-between md:flex-row">
+                        <form method="POST" action="{% url 'subscribe' %}">
+                        {% csrf_token %}
+                        <input name="phone" class="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Enter your phone no.">
+                        <button type="submit" class="w-full my-2 p-2 mx-1 text-sm bg-gray-800 rounded-lg text-white font-semibold uppercase lg:w-auto">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+</div>

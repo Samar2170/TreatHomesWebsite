@@ -1,0 +1,31 @@
+{% extends 'components/base.html' %}
+
+{% block content %} 
+{% include 'components/hero.html' %}
+
+{% include 'components/sites.html' %}
+{% include 'components/service_banner2.html' %}
+
+
+
+
+
+
+{% include 'components/USP_banner.html' %}
+{% include 'components/counter.html' %}
+<div class="container pt-24">
+  <div class="lg:text-center ">
+      
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        What our Customers Say
+      </p>
+  
+    </div>
+  </div>  
+
+  
+{% include 'components/reviews.html' %}
+
+{% include 'components/sub_banner.html' %}
+{% include 'components/footer.html' %}
+{% endblock %}

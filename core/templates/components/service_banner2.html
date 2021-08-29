@@ -1,0 +1,27 @@
+<div class="bg-primary py-14" style="font-family: 'Poppins';">
+    <h3 class="text-2xl tracking-widest text-white text-center">SERVICES</h3>
+    <h1 class="mt-8 text-center text-5xl text-white font-semibold">What we help you with.</h1>
+
+    <!-- Box -->
+    <div class="md:flex md:justify-center md:space-x-8 md:px-14">
+      <!-- box-1 -->
+      {% for s in services %}
+      <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
+        <div class="w-sm">
+          <img class="w-64 " src="{{s.head_image.url}}" alt="" />
+          <div class="mt-4 text-primary text-center">
+            <h1 class="text-xl font-medium">{{s}}</h1>
+            <p class="mt-4 mb-8  font-italic text-gray-600">{{s.brief}}</p>
+            <a href="/service/{{s.id}}"  class="mt-8 mb-4 px-14 py-2 rounded-full bg-primary text-white tracking-widest bg-primary transition duration-200">MORE</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+      <!-- box-2 -->
+
+
+      <!-- box-3 -->
+
+    </div>
+  </div>

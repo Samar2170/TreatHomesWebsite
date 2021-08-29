@@ -1,0 +1,62 @@
+<div class="bg-white dark:bg-gray-800 ">
+    <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+        <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+            <span class="block">
+                Ancillary Services
+            </span>
+            <span class="block text-indigo-500">
+                 From Wifi to Laundry we got your Covered
+            </span>
+        </h2>
+        <div class="lg:mt-0 lg:flex-shrink-0">
+            <div class="mt-12 inline-flex rounded-md shadow">
+                <button type="button" class="py-4 px-6  bg-primary focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                    Book an Apartment
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="h-auto grid ">
+        <div class="grid grid-cols-1  md:grid-cols-3">
+            {% for a in ancs %}
+            <div class="container">
+                <div class="h-auto">                   
+                    <div class="flex flex-row bg-teal-100 rounded">
+                        <div class="relative z-2 max-w-sm rounded overflow-hidden shadow-lg">
+                        <div class="px-6 py-4">
+                        <div class="flex justify-center mb-5">
+                            <!-- <h1 class="text-4xl text-primary">  </h1> -->
+                            <div class=" h-auto w-auto bg-white">
+                                <img src="{{a.image.url}}"
+                                    alt="Just a flower" class=" w-full bg-white object-scale-down lg:object-cover  lg:h-48 rounded-2xl">
+                            </div>
+                        </div>
+                        <div class="relative text-teal-900 font-bold text-xl mb-2">{{a.name}}</div>
+                        <p class="text-gray-700 text-base z-234 ">
+                            {{a.brief}}
+                        </p>
+                    <!-- <div class="text-teal-900 font-bold text-xl mt-2 mb-2">Follow Us</div>
+                        <div class=" flex flex-wrap  justify-">
+                            <div class="rounded w-auto flex-1 text-gray-700 text-center bg-teal-400 hover:bg-teal-600 px-4 py-2 m-2">1</div>
+                            <div class="rounded w-auto flex-1 text-gray-700 text-center bg-teal-400 hover:bg-teal-600 px-4 py-2 m-2">2</div>
+                            <div class="rounded w-auto flex-1 text-gray-700 text-center bg-teal-400 hover:bg-teal-600 px-4 py-2 m-2">3</div>
+                            <div class="rounded w-auto flex-1 text-gray-700 text-center bg-teal-400 hover:bg-teal-600 px-4 py-2 m-2">4</div>
+                        </div> -->
+                    <div class="text-xs text-center text-teal-900  mt-5 ">© Treathomes</div>
+                    </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+
+
+    </div>
+</div>
+</div>
+
+
